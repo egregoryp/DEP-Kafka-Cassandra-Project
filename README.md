@@ -19,3 +19,13 @@
 1. **Explain the case**
 2. **Demo**
 3. **Questions**
+
+**Steps to implement:**
+ 1. Use files starting with z1.Proy
+ 2. Configure Cassandra Database using DataStax
+ 3. Create DB spark_db in Cassandra
+ 4. Create Tables Customer and Customer_search (file zCustomers.cql)
+ 5. Insert Customer Data
+ 6. Download CDATA Driver for ODBC to connect with PowerBI
+
+ Note: extra file to generate files as an example is ProyCustomerFileWriter.ipynb

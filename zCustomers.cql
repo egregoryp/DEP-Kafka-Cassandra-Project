@@ -1,3 +1,6 @@
+CREATE KEYSPACE spark_db WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+USE spark_db;
+
 CREATE TABLE customer(customer_id text PRIMARY KEY, user_name text, age text, address text, email text, create_date timestamp);
 INSERT INTO customer (customer_id, user_name, age, address, email, create_date) VALUES ('1',  'Johnny',   '49', '23 Main St',   'maryjones71@example.com',  '2023-04-27 20:22:14');
 INSERT INTO customer (customer_id, user_name, age, address, email, create_date) VALUES ('2',  'Marielys', '45', '23 Main St',   'emilysmith81@example.com', '2023-04-27 20:22:16');
@@ -19,3 +22,5 @@ INSERT INTO customer (customer_id, user_name, age, address, email, create_date) 
 INSERT INTO customer (customer_id, user_name, age, address, email, create_date) VALUES ('18', 'Johvay',   '44', '72 Main St',   'lukewilson40@example.com', '2023-04-27 20:22:48');
 INSERT INTO customer (customer_id, user_name, age, address, email, create_date) VALUES ('19', 'Johnathan','34', '37 Oak Rd',    'emilysmith73@example.com', '2023-04-27 20:22:50');
 INSERT INTO customer (customer_id, user_name, age, address, email, create_date) VALUES ('20', 'JohnEric', '31', '88 Main St',   'emilysmith1@example.com',  '2023-04-27 20:22:52');
+
+CREATE TABLE customer_search(id text PRIMARY KEY, customer_id text, customer_name text, product_searched text, search_date timestamp, country_name text, state text);
