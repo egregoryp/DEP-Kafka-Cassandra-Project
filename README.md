@@ -15,10 +15,6 @@
     - Product Search
     - Join with Location Catalog in csv file
     - Join with Customers Table in Cassandra Database
-    
-1. **Explain the case**
-2. **Demo**
-3. **Questions**
 
 **Steps to implement:**
  1. Use files starting with z1.Proy
